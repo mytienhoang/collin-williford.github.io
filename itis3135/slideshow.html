@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ITIS 3135 | Collin Williford's Catholic Walrus | Slideshow </title>
+    <meta name="description" content="slideshow">
+    <meta charset="UTF-8">
+    <link href = "styles/default.css" rel = "stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <h2>Slideshow</h2>
+        <h3>Collin Williford's Catholic Walrus</h3>
+
+        
+        <div class="slideshow">
+            <img src="images/slideshow/image1.jpg" id="img1">
+            <img src="images/slideshow/image2.jpg" id="img2">
+            <img src="images/slideshow/image3.jpg" id="img3">
+            <img src="images/slideshow/image4.jpg" id="img4">
+            <img src="images/slideshow/image5.jpg" id="img5">
+            <img src="images/slideshow/image6.jpg" id="img6">
+        </div>
+
+        <div class="thumbnail-container">
+            <img src="images/slideshow/image1.jpg" class="thumbnail" data-image="#img1">
+            <img src="images/slideshow/image2.jpg" class="thumbnail" data-image="#img2">
+            <img src="images/slideshow/image3.jpg" class="thumbnail" data-image="#img3">
+            <img src="images/slideshow/image4.jpg" class="thumbnail" data-image="#img4">
+            <img src="images/slideshow/image5.jpg" class="thumbnail" data-image="#img5">
+            <img src="images/slideshow/image6.jpg" class="thumbnail" data-image="#img6">
+        </div>
+        
+        <script>
+            $(function(){
+                $("#header").load("components/header.html"); 
+                $("#footer").load("components/footer.html"); 
+            });
+            </script>
+    </main>
+<div id="footer"></div>
+</body>
+</html>

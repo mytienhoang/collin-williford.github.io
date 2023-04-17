@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ITIS 3135 | Collin Williford's Catholic Walrus | Arrays </title>
+    <meta name="description" content="Home Page Index">
+    <meta charset="UTF-8">
+    <link href = "styles/default.css" rel = "stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>    
+</head>
+<body>
+    <div id="header"></div>
+<main >
+    <div class="array_buttons"></div>
+        <input type="button" id="addSalary" value="Add to Salary" onclick="fillNames()">
+        <div class="addingSalaryBox">
+            <select class="namesArray" name="" id="namesArray" style="display:none"></select>
+            <input type="number" id="addSalaryBox" value="Salary" style="display:none">
+            <input type="button" id="confirmAddSalary" value="Confirm Salary" style="display:none" onclick="addSalary()">
+        </div>
+        <input type="button" id="displayResults" value="Display Results" onclick="displayResults()">
+        <div class="array_displaySalary">
+            <div class="array_totalSalary">
+                <h3 id="totalSalaryHead" style="display:none">Combined Salaries: </h3>
+                <h3 id="resultsTotal"></h3>
+            </div>   
+            <div class="array_highSalary">  
+                <h3 id="highestSalaryhead" style="display:none">Highest Salary: </h3>
+                <h3 id="highestSalary"></h3>
+            </div>
+        </div>
+        <input type="button" id="displaySalary" value="Display Salary" onclick="displaySalary()">
+        <input type="button" id="refreshTablebtn" value="Refresh Table" style="display:none">
+    </div>
+    <section class="array_table">
+        <table style="display:none" id="results_table">
+            <tr>
+                <th>Name</th>
+                <th>Salary</th>
+        </table>
+    </section>
+    <script>
+        $(function(){
+            $("#header").load("components/header.html"); 
+            $("#footer").load("components/footer.html"); 
+        });
+        </script>
+    
+</main>
+<script src="scripts/arrays.js"></script>
+<div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ITIS 3135 | Collin Williford's Catholic Walrus | Home </title>
+    <meta name="description" content="Home Page Index">
+    <meta charset="UTF-8">
+    <link href = "styles/default.css" rel = "stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>    
+    <script src="scripts/calculator_seperationofconcerns.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+<main>
+    <h2>Collin Willifords Catholic Walrus</h2>
+    <div class="calc_main">
+        <input type="text" id="res">
+        <div class="calc_btn">
+            <input type="button" value="C" id="clear" >
+            <input type="button" value="%" id="percent" >
+            <input type="button" value="←" id="back"> 
+            <input type="button" value="/" id="fslash">
+            <br>
+            <input type="button" value="7" id="seven" >
+            <input type="button" value="8" id="eight" >
+            <input type="button" value="9" id="nine" >
+            <input type="button" value="x" id="multiply" >
+            <br>
+            <input type="button" value="4" id="four" >
+            <input type="button" value="5" id="five" >
+            <input type="button" value="6" id="six" >
+            <input type="button" value="-" id="subtract" >
+            <br>
+            <input type="button" value="1" id="one" >
+            <input type="button" value="2" id="two" >
+            <input type="button" value="3" id="three" >
+            <input type="button" value="+" id="addition" >
+            <br>
+            <input type="button" value="00" id="zerozero">
+            <input type="button" value="0" id="zero" >
+            <input type="button" value="." id="decimal" >
+            <input type="button" value="=" id="equals">
+       </div>
+    </div>
+
+    <script>
+        $(function(){
+            $("#header").load("components/header.html"); 
+            $("#footer").load("components/footer.html"); 
+        });
+    </script>
+</main>
+    <div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+html {
+    background-color: aliceblue;
+    font-family: Roboto, sans-serif;
+}
+body {
+    margin:0px;
+    padding:0px;
+}
+figure img {
+    width: 500px;
+}
+nav a:link {
+    color:aliceblue;
+}
+nav a:visited {
+    color: aliceblue;
+}
+nav a:hover {
+    color: aliceblue;
+}
+nav a:active {
+    color: aliceblue;
+}
+nav {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #131b23;
+    color: aliceblue;
+
+}
+nav a {
+    padding-right: 5px;
+    font-size: 1.2rem;
+
+}
+nav h1 {
+    font-size: 1.6rem;
+}
+nav img {
+    padding: 5px;
+    width:35px;
+}
+.float-container {
+    display: flex;
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 50px;
+}
+.float-child {
+    flex:left;
+    padding-right: 20px;
+    width: 600px;
+    padding-left: 20px;
+}
+form {
+    padding-top: 100px;
+}
+.shoesPages {
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin-left:auto;
+    margin-right:auto;
+    width: 1200px;
+}
+.shoesPages figure {
+    text-align:center;
+}
+.shoesPages h2 {
+    text-align:center;
+    margin-top:40px;
+    margin-bottom:25px;
+}
+.shoeImg {
+    position:relative;
+    display:inline-block;
+}
+.shoeImg img {
+    display:block;
+}
+.shoeImg figcaption {
+    position:relative;
+    padding-bottom: 15px;
+    font-size: 1.3rem;
+}
+.shoeRow {
+    display:flex;
+    margin-bottom: 50px;
+}
+.reviewTxt {
+    padding-top:40px;
+    width: 700px;
+}
+figcaption {
+    display:right;
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ITIS 3135 | Collin Williford's Catholic Walrus | First JavaScripts</title>
+    <meta name="description" content="Home Page Index">
+    <meta charset="UTF-8">
+    <link href = "styles/default.css" rel = "stylesheet">
+    <script src="scripts/default.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>    
+
+</head>
+<body>
+<div id="header"></div>
+<main class="firstscripts">
+    <h2>Collin Willifords Catholic Walrus</h2>
+    <h2>First JavaScripts</h2>
+    <div class="datetime">
+        <div class="time"></div>
+        <div class="date"></div>
+    </div>
+
+    <h3>Hello, What is your name and how are you doing today? </h3>
+
+    <section class="user-input">
+        <input  type="text" id="name" placeholder="Name" maxlength="20">  <br>  <br>
+        <input type="text" id="feeling" placeholder="Good/Bad" maxlength="20"> <br>  <br> 
+        <button type="button" id="btn1" onclick="userReturn()">Submit</button>
+            <p class="name-output" id="output1"></p>
+    </section>
+    <section class="walrus_buttons">
+        <button type="button" id="walrus_picture" onclick="walrusLooks()">What does a Walrus looks like?</button>
+        <div class="walrus_img">
+            <img id="walrus_img" src="images/walrus_picture.jpg" alt="Walrus" style="display:none;">
+        </div>
+        <button type="button" id="smell" onclick="walrusSmell()">What does a Walrus smell like?</button> <br>
+            <p id="walrus_smell" style="display:none">Walruses smell really, really, really bad</p>
+        <button type="button" id="live" onclick="walrusLive()">Where does a Walrus live?</button>
+            <p id="walrus_live" style="display:none;">Walruses live in cold enviroments like Greenland</p>
+
+        <button type="button" id="pet" onclick="walrusPet()">Where can I pet a Walrus</button>
+            <p id="walrus_pet" style="display: none;">If you try and pet a walrus it will bite your hand off</p>
+
+        <button type="button" id="ugly" onclick="walrusUgly()">Why are Walruses so ugly</button>
+            <p id="walrus_ugly" style="display: none;">They are just born that way :(</p>
+    </section>
+
+    <script>
+        $(function(){
+            $("#header").load("components/header.html"); 
+            $("#footer").load("components/footer.html"); 
+        });
+    </script>       
+
+</main>
+<div id="footer"></div>
+</body>
+</html>

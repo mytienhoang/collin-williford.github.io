@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS 3135 | Collin Williford | Project 1</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="./scripts/project1.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+    <div class="float-container">
+        <div class="float-child aboutAuthor">
+            <h3>About the Author</h3>
+            <p>I started to take running seriously my sophmore year of high school when I stopped playing lacrosse. Since then it has both been a pashion of mine to get faster every year and also explore all new types of running shoes. I am now just a club runner at the University of North Carolina at Charlotte but I still strive to get faster every year both on the track and cross country courses. Its also become a passion of mine alongside running to test out various types of running shoes, so I have made this website to share my thoughts for others to see.</p>
+
+            <form>
+                <legend>Sign up for my email newsletter</legend>
+                <input type="email" name="email" id="email" placeholder="Your Email">
+                <button type="submit" id="submit-btn">Submit</button>
+                <!-- If you want to check the emails array open up the console -->
+            </form>
+
+        </div>
+        <div class="float-child">
+            <figure>
+                <img src="images/sam.jpg" alt="Picture of sam running a 3k" width="400px">
+                <figure>Running a 1 Mile race on the Track</figure>
+            </figure>
+            
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            $("#header").load("components/header.html"); 
+            //  $("#footer").load("components/footer.html"); 
+        });
+    </script>
+    </main>
+
+<div id="footer"></div>
+</body>
+</html>

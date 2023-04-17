@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ITIS 3135 | Collin Williford's Catholic Walrus | Midterm </title>
+    <meta name="description" content="Midterm, multi-page hobby sitea as one file">
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>    
+    <script src="scripts/hobby.js"></script>
+    <style>
+        .nav_buttons {
+            display:flex;
+            padding:0px 15px 5px 15px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width:500px;
+            font-size: 20px;
+            
+        }
+        h3 + h3 {
+            margin-left: 50px;
+        }
+        section {
+            
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        section[hidden] {
+            display:none;
+        }
+        header {
+            background-color: #0e0927;
+            color: silver;
+            width:100%;    
+            text-align:center;  
+            font-family: "Merriweather", serif;     
+        }
+        header h1 {
+            margin-bottom:3px;
+        }
+        body {
+            margin:0;
+            min-height: 100vh;
+            display:flex;
+            flex-direction:column;
+        }
+        footer {
+            margin-top:auto;
+            margin-right: auto;
+            margin-left:auto;
+            margin-bottom: 50px;
+        }
+        section h2 {
+            text-align:center;
+        }
+        section p {
+            display: block;
+            text-align:left;
+            max-width: 800px;
+            margin-right:auto;
+            margin-left:auto;
+           
+            
+        }
+        .who_row {
+            display:flex;
+        }
+        .who_column {
+           flex:50%;
+           padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Running Hobby Site</h1>
+        <nav class="nav_buttons">
+            <h3 id="aboutMeH3" onclick="toggleSelection('who')">About Me</h3>
+            <h3 id="HomeH3" onclick="toggleSelection('Home')">Home</h3>
+            <h3 id="whenH3" onclick="toggleSelection('when')">College</h3>
+            <!-- <h3 id="whereH3" onclick="toggleSelection('where')">Getting Started</h3> -->
+            <h3 id="howH3" onclick="toggleSelection('how')">Future</h3>
+        </nav>
+    </header>
+<main>
+    <section class="who" id="who" hidden>
+        <h2>About Me</h2>
+        <p>I am a sophmore computer science student here at UNCC who also developed a passion for running throught highschool. I mostly run as a hobby and use it as a way to stay in shape. I started to take running seriously back in sophmore year of highschool when I stopped playing laccrosse which prevoiusly was my main sport for nearly my whole life. And after that I started to pick up running through cross country and track at my school and began to enjoy it. </p>
+        <div class="who_row"></div>
+            <figure class="who_column">
+                <img src="images/collinatrace.jpg" alt="Picture of me at IMSA race" width="400px">
+                <figcaption>Picture of me at IMSA race next to LMP3 car</figcaption>
+            </figure>
+            <figure class="who_column">
+                <img src="images/IMG_6783.JPG" alt="Picture of my dog Cooper with a rain jacket on" width="400px">
+                <figcaption>Picture of my dog Cooper with a rain jacket on</figcaption>
+            </figure>
+        </div>  
+    </section>
+    <section class="what" id="Home" hidden> 
+        <h3>Home</h3>
+        <figure>
+            <img src="images/UKTNE7452 (2).JPG" alt="" width="350px">
+            <figcaption>Me running (gold shirt) at a club track meet</figcaption>
+        </figure>
+        <p>Welcome to my hobby site. I'll be focusing on my passion of running which has brought me to meet lots of new friends throught both high school and now on the club here at Charlotte.  </p>
+        <p>I'll be going into more details about my hobby on the other pages which can access in the navigation bar at the top of the page. </p>
+
+    </section>
+    <section  class="when" id="when" hidden>
+        <h3>Running Now In College</h3>
+        <figure>
+            <img src="images/ugaMeet.jpg" alt="Everyone that competed at the UGA club meet" width="600">
+            <figcaption>Everyone that competed at a meet that the UGA running club hosted</figcaption>
+        </figure>
+        <p>Now that I'm in college I am no longer part of a team so I decided to join the running club here at UNCC last year. We don't take things as serious at a college team would and I mostly participate just for the fun of it. I still find it enjoyable to stay in shape and continue to challenge myself competitively at both cross country and track meets that clubs host.</p>
+        <p>The picture above is from the track meet that our club went to recently that was hosted by the running club down at University of Georgia. We ourselves are about to host a meet on 3/26 which we will have 7 other clubs travel to our track for a track meet. Right now we are in Outdoor track season so most of the popular events tend to be mid distance like 800m,1600m, or 3200m and I personally have been enjoying competing in the 1600m recently. </p>
+    </section >
+    <!-- <section class="where" id="where" hidden>
+        <h3>Getting Started</h3>
+        <figure></figure>
+    </section> -->
+    <section class="how" id="how" hidden>
+        <h3>Future of My Hobby</h3>
+        <p>Ever since I picked up running in High School I've been hoping that its something that I want to continue for a long time. For my years in college I'm going to continue to compete with our club but after that I hope I still have the energy and drive to continue running. I know a lot of people runners as they get older they start to compete in longer distance events like the half-marathon or full marathon. And maybe i'll be doing that one day but for now I don't enjoy trainig for thoes longer events </p>
+        <p>Another hobby that I have got into because of running is shoes and espically running shoes. Below I have inlcuded a picture of some of my shoes that I have right now. Its a hobby that me and my friends have started as we like to test and find new or different shoes but its also turned into an excuse for me to buy more shoes than I actually need. </p>
+        <p></p>
+        <figure>
+            <img src="images/shoes.jpg" alt="running shoes" width="300px">
+            <figcaption>My Running Shoes</figcaption>
+        </figure>
+
+    </section>
+    
+
+
+    
+    
+</main>
+<footer>
+    <div>     
+        <a href="https://validator.w3.org/check?uri=referer"><img src="images/htmlvalidationbutton.png" width="88" height="31" alt="Validate webpage HTML." /></a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="images/cssvalidationbutton.png" width="88" height="31" alt="Validate webpage CSS." /></a>
+    </div>
+</footer>
+</body>
+</html>

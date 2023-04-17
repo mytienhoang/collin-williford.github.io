@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ITIS 3135 | Collin Williford's Catholic Walrus | Calculator My Try</title>
+    <meta name="description" content="Calculator My Try">
+    <meta charset="UTF-8">
+    <link href = "styles/default.css" rel = "stylesheet">
+    <script src="scripts/calculator_try.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>    
+
+</head>
+<body>
+<div id="header"></div>
+<main>
+    <h2>Collin Willifords Catholic Walrus</h2>
+    <p>Click the button</p>
+    <input type="button" value="Addition" onclick="simpleCalc()" />
+
+    <script>
+        $(function(){
+            $("#header").load("components/header.html"); 
+            $("#footer").load("components/footer.html"); 
+        });
+        </script>
+</main>
+<div id="footer"></div>
+</body>
+</html>

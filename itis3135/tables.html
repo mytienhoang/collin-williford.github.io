@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> itis 3135 | Collin Williford's Catholic Walrus | HTML Tables</title>
+    <meta name="description" content="Activity #2 HTML Tables 3135 Assignmnet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/default.css">
+</head>
+<body>
+<header>
+    <div id="header"></div>
+</header>
+<main class="tables">
+    <h2>Collin Willifords Catholic Walrus</h2>
+    <h2>Activity #2 - HTML Tables</h2>
+    <h3>My Tabular Data</h3>
+    <h3>Employee Data in Simple Table</h3>
+    <table class="table1">
+        <tr >
+            <th >Name</th>
+            <th>Email</th>
+            <th>Years of Service</th>
+
+        </tr>
+        <tr >
+            <td>Craig Engles</td>
+            <td>cengles@gmail.com</td>
+            <td>4</td>
+        </tr>
+        <tr >
+            <td>Morgan McDonald</td>
+            <td>mmcdonald@gmail.com</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>George Beamish</td>
+            <td>gbeamish@gmail.com</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Joe Klecker</td> 
+            <td>jklecker@gmail.com</td>
+            <td>4</td>
+        </tr>
+        <tr>
+           <td>Ollie Hoare</td>
+           <td>ohoare@gmail.com</td>
+           <td>14</td>
+        </tr>
+        <tr>
+            <td>Reed fisher</td>
+            <td>rfisher@gmail.com</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Connor Mantz</td>
+            <td>cmantz@gmail.com</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Cooper Teare</td>
+            <td>cteare@gmail.com</td>
+            <td>22</td>
+        </tr>
+
+    </table>
+
+    <h3>Employee Data in Complex Table</h3>
+    <figure>
+        <figcaption>Table for Employee Informaiton</figcaption>
+    <table  class="table2">
+        <tr>
+
+            <th>Job Title</th>
+            <th >Name</th>
+            <th>Email</th>
+            <th>Years of Service</th>
+            <th>Monthly Salary</th>
+            
+
+        </tr>
+        <tr >
+            <td rowspan="2">Accounting</td>
+            <td>Craig Engles</td>
+            <td>cengles@gmail.com</td>
+            <td>4</td>
+            <td>$67,000</td>
+        </tr>
+        <tr >
+            
+            <td>Morgan McDonald</td>
+            <td>mmcdonald@gmail.com</td>
+            <td>15</td>
+            <td>$89,000</td>
+        </tr>
+        <tr  >
+            <td rowspan="3">Information Technology </td>
+            <td>George Beamish</td>
+            <td>gbeamish@gmail.com</td>
+            <td>32</td>
+            <td>$72,000</td>
+            
+        </tr>
+        <tr >
+            
+            <td>Joe Klecker</td> 
+            <td>jklecker@gmail.com</td>
+            <td>4</td>
+            <td>$56,000</td>
+        </tr>
+        <tr >
+            
+           <td>Ollie Hoare</td>
+           <td>ohoare@gmail.com</td>
+           <td>14</td>
+           <td>$106,000</td>
+        </tr>
+        <tr >
+            <td rowspan="3" style="background-color: #e9f1f7;">Management</td>
+            <td>Reed fisher</td>
+            <td>rfisher@gmail.com</td>
+            <td>12</td>
+            <td rowspan="1">$92,000</td>
+        </tr>
+        <tr>
+            
+            <td>Connor Mantz</td>
+            <td>cmantz@gmail.com</td>
+            <td>8</td>
+            <td>$93,000</td>
+            
+        </tr>
+        <tr>
+            
+            <td>Cooper Teare</td>
+            <td>cteare@gmail.com</td>
+            <td>22</td>
+            <td>$95,000</td>
+        </tr>
+        <tr>
+            <td colspan="3">Total Years of Service</td>
+            <td>111</td>
+            <td>Total Salary Sum: $670,000</td>
+        </tr>
+
+    </table>   
+    
+    </figure>
+    <script>
+        $(function(){
+            $("#header").load("components/header.html"); 
+            $("#footer").load("components/footer.html"); 
+        });
+        </script>
+
+</main>
+<div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> itis 3135 | Collin Williford's Catholic Walrus | HTML Form</title>
+    <meta name="description" content="Activity #3 HTML Form 3135 Assignmnet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/default.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>    
+
+</head>
+
+<body>
+<div id="header"></div>
+    <main>
+        <h2>Collin Willifords Catholic Walrus</h2>
+        <h1>Williford Web</h1>
+        <h3>Welcome to Williford Web, we are a Web-Development Company here to help you create the best webpages</h3>
+    
+            
+            <h3>Our Information</h3>
+            <ul class="form-ul">
+                <li>Phone Number - (919) 997-4567</li>
+                <li>E-mail - willifordweb@gmail.com</li>
+            </ul>
+
+            <h2>Interest Form</h2>
+            <section class="form-questions">
+                <form action="#">
+                    <fieldset>
+                        <h3>Your Contact Information</h3>
+                        <label><span>Name </span><input type="text" name="customer-name" placeholder="Your Name" required size="20"></label>
+                        <label><span>Phone Number </span><input type="text" name="phone-number" id="phone-number" placeholder="Phone Number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"></label>
+                        <label><span>Email </span><input type="text" name="email" id="email" placeholder="Email" required></label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Would you be interested our web services?</legend>
+                        <label><input id="yes" type="radio" name="yes-no" value="Yes" checked> Yes</label>
+                        <label><input id="no" type="radio" name="yes-no" value="No"> No</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Does your company already have a website?</legend>
+                        <label id="selection">Please select a option</label>
+                        <select>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>What are some elements you would like on your personalized website</legend>
+                        <label> <input type="checkbox" name="bright-colors" id="bright-colors" value="bright colors">Bright Colors </label>
+                        <label><input type="checkbox" name="dull-colors" id="dull-colors" value="dull colors">Dull Colors</label>
+                        <label><input type="checkbox" name="mostly-images" id="mostly-images" value="mostly-images">Mostly Images</label>
+                        <label><input type="checkbox" name="mostly-text" id="mostly-text" value="mostly-text">Mostly Text</label>
+
+                    </fieldset>
+                    <fieldset>
+                        <button type="sumbit" value="Submit">Submit</button>
+                        <button type="reset" value="Reset">Reset</button>
+                    </fieldset>
+
+                </form> 
+            </section>
+            <script>
+                $(function(){
+                    $("#header").load("components/header.html"); 
+                    $("#footer").load("components/footer.html"); 
+                });
+                </script>
+    
+    </main>
+<div id="footer"></div>
+</body>
+</html>

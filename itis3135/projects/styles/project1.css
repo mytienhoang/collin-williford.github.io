@@ -1,0 +1,17 @@
+html {
+    color: #1b131b;
+    background: aliceblue;
+}
+
+header {
+    text-align:center;
+}
+body {
+    max-width: 960px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+h3 {
+    padding-top: 25px;
+}
