@@ -386,6 +386,14 @@ firstscripts, .user-input {
 }
 
 
+/* peer review projects  */
+.review_check {
+    margin:auto;
+    text-align:left;
+    width: 600px;
+
+}
+
 
 
 

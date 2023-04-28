@@ -15,6 +15,18 @@ window.onload = function() {
 
 };
 
+$(document).ready(function() {
+	$('.gallery').magnificPopup({
+		type: 'image',
+		gallery: {
+			enabled: true
+		}
+	});
+});
+
+
+
+
     // const facebook = document.getElementById("facebook");
     // facebook.addEventListener('click', function() {
     //     alert("Sorry, I wasn't actually going to make a facebook page for this")

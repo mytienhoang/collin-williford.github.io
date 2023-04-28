@@ -11,23 +11,12 @@ $(document).ready(function() {
         },
         dataType: "json",
         success: function(data) {
-            console.log("data");
             $("#team").html("");
-            $(data.management).each(function() {
-                let obj = $(this);
-                $("#team").append("<h3>" + obj.prop("name") + "</h3>" + 
-                    obj.prop("title") + "<br>" + 
-                    obj.prop("bio") + "<br>");
-            });
+            for(let i=0; i<data.teammembers.length; i++) {
+                let member = data.teammembers[i];
+                $("#team").append("<h3>" + member.name + "</h3>" + member.title + "<br>" + member.bio + "<br>")
+            }
+            
         }
     });
 });
-
-
-// $(data).find("management").children().each(function() {
-            //     var xmlDoc = $(this);
-            //     $("#team").append
-            //     ("<h3>" + xmlDoc.find("name").text() + "</h3>" +
-            //               xmlDoc.find("title").text() + "<br>" +
-            //               xmlDoc.find("bio").text() + "<br>");
-            // });
